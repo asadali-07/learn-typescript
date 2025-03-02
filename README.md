@@ -21,13 +21,17 @@ npm install  # or yarn install
 ```
 
 ### Running the Code
+To install TypeScript:
+```sh
+npm install -g typescript
+```
 To compile TypeScript files to JavaScript, run:
 ```sh
-npx tsc
+tsc filename.ts 
 ```
 To run a TypeScript file directly:
 ```sh
-npx ts-node src/index.ts
+node filename.js
 ```
 
 ## 📖 Topics Covered
@@ -40,7 +44,6 @@ npx ts-node src/index.ts
 ## 🛠 Tools & Technologies
 - TypeScript
 - Node.js
-- ts-node
 - ESLint & Prettier
 
 ## 🤝 Contributing
