@@ -344,3 +344,40 @@
    
 //   const newVPoint = new VirtualPoint(13, 56);
 //   logPoint(newVPoint); // logs "13, 56"
+
+// let Name: string="joh";
+// let Age: number=30;
+// let isUpdated: boolean=true;
+
+// function updateProfile(name?: string, age?: number, isUpdated?: boolean) {
+//     if (name) {
+//         Name = name;
+//     }
+//     if (age) {
+//         Age = age;
+//     }
+//     if (isUpdated !== undefined) {
+//         isUpdated = isUpdated;
+//     }
+// }
+
+// updateProfile("jane doe", 35, false);
+// console.log(Name); // Output: jane doe
+// console.log(Age); // Output: 35     
+// console.log(isUpdated); // Output: false
+
+// function validate(name: string, age: number, isUpdated: boolean): boolean {
+//     if (name.length < 4) {
+//         return false;
+//     }
+//    else if (age <= 0) {
+//         return false;
+//     }
+//     else if (isUpdated === undefined) {
+//         return false;
+//     }
+//     else {
+//         return true;
+//     }
+// }
+// console.log(validate(Name, Age, isUpdated)) // Output: true
