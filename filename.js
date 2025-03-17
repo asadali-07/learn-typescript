@@ -270,9 +270,9 @@
 //   }
 //   const newVPoint = new VirtualPoint(13, 56);
 //   logPoint(newVPoint); // logs "13, 56"
-var Name = "joh";
-var Age = 30;
-var isUpdated = true;
+// let Name: string="joh";
+// let Age: number=30;
+// let isUpdated: boolean=true;
 // function updateProfile(name?: string, age?: number, isUpdated?: boolean) {
 //     if (name) {
 //         Name = name;
@@ -288,18 +288,37 @@ var isUpdated = true;
 // console.log(Name); // Output: jane doe
 // console.log(Age); // Output: 35     
 // console.log(isUpdated); // Output: false
-function validate(name, age, isUpdated) {
-    if (name.length < 4) {
-        return false;
+// function validate(name: string, age: number, isUpdated: boolean): boolean {
+//     if (name.length < 4) {
+//         return false;
+//     }
+//    else if (age <= 0) {
+//         return false;
+//     }
+//     else if (isUpdated === undefined) {
+//         return false;
+//     }
+//     else {
+//         return true;
+//     }
+// }
+// console.log(validate(Name, Age, isUpdated)) // Output: true
+// let a:number=10;
+// let b:number=19;
+// console.log(a+b);
+// interface User {
+//      name:string;
+//      age:number;
+// }
+// let user:User={
+//     name:"Priyanshu",
+//     age:21,
+// }
+function generateOTP() {
+    var otp = "";
+    for (var i = 0; i < 4; i++) {
+        otp += Math.floor(Math.random() * 10);
     }
-    else if (age <= 0) {
-        return false;
-    }
-    else if (isUpdated === undefined) {
-        return false;
-    }
-    else {
-        return true;
-    }
+    return otp;
 }
-console.log(validate(Name, Age, isUpdated)); // Output: true
+console.log(generateOTP());

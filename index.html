@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div class="container">
+        <h2>STUDENT REGISTRATION FORM</h2>
+        <img src="https://i0.wp.com/rollercoasteryears.com/wp-content/uploads/Thrive-During-Finals-.jpg?fit=1000%2C667&ssl=1" height="100px" width="100px"  alt="" >
+        <form>
+            <label>First Name:</label>
+            <input type="text" name="first_name" maxlength="30" required>
+            <br><br>
+            <label>Last Name:</label>
+            <input type="text" name="last_name" maxlength="30" required>
+            <br><br>
+            <label>Date of Birth:</label>
+            <select name="day">
+                <option>Day</option>
+                <script>
+                    for(let i=1; i<=31; i++){
+                        document.write(`<option value="${i}">${i}</option>`);
+                    }
+                </script>
+            </select>
+            <select name="month">
+                <option>Month</option>
+                <option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option>
+                <option>May</option><option>Jun</option><option>Jul</option><option>Aug</option>
+                <option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option>
+            </select>
+            <select name="year">
+                <option>Year</option>
+                <script>
+                    let year = new Date().getFullYear();
+                    for(let i=year; i>=1970; i--){
+                        document.write(`<option value="${i}">${i}</option>`);
+                    }
+                </script>
+            </select>
+            <br><br>
+            <label>Email ID:</label>
+            <input type="email" name="email" required>
+            <br><br>
+            <label>Mobile Number:</label>
+            <input type="text" name="mobile" pattern="\d{10}" placeholder="10-digit number" required>
+            <br><br>
+            <label>Gender:</label>
+            <div class="gender">
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+            <br><br>
+            <label>Address:</label>
+            <textarea name="address" rows="3"></textarea>
+            <br><br>
+            <label>City:</label>
+            <input type="text" name="city" maxlength="30">
+            <br><br>
+            <label>Pin Code:</label>
+            <input type="text" name="pin" pattern="\d{6}" placeholder="6-digit number" required>
+            <br><br>
+            <label>State:</label>
+            <input type="text" name="state" maxlength="30">
+            <br><br>
+            <label>Country:</label>
+            <input type="text" value="India" readonly>
+            <br><br>
+            <label>Hobbies:</label>
+            <div class="hobbies">
+                <input type="checkbox" name="hobbies" value="drawing"> Drawing
+                <input type="checkbox" name="hobbies" value="singing"> Singing
+                <input type="checkbox" name="hobbies" value="dancing"> Dancing
+                <input type="checkbox" name="hobbies" value="sketching"> Sketching
+                <input type="checkbox" name="hobbies" value="others"> Others:
+                <input type="text" name="hobbies_other">
+            </div>
+            <br><br>
+            <label>Qualification:</label>
+            <table class="qualification-table">
+                <tr>
+                    <th>Sl.No.</th>
+                    <th>Examination</th>
+                    <th>Board</th>
+                    <th>Percentage</th>
+                    <th>Year of Passing</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Class X</td>
+                    <td><input type="text" name="board_x" maxlength="10"></td>
+                    <td><input type="text" name="percentage_x" maxlength="5"></td>
+                    <td><input type="text" name="year_x" maxlength="4"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Class XII</td>
+                    <td><input type="text" name="board_xii" maxlength="10"></td>
+                    <td><input type="text" name="percentage_xii" maxlength="5"></td>
+                    <td><input type="text" name="year_xii" maxlength="4"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Graduation</td>
+                    <td><input type="text" name="board_grad" maxlength="10"></td>
+                    <td><input type="text" name="percentage_grad" maxlength="5"></td>
+                    <td><input type="text" name="year_grad" maxlength="4"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Masters</td>
+                    <td><input type="text" name="board_masters" maxlength="10"></td>
+                    <td><input type="text" name="percentage_masters" maxlength="5"></td>
+                    <td><input type="text" name="year_masters" maxlength="4"></td>
+                </tr>
+            </table>
+            <br><br>
+            <label>Courses Applied For:</label>
+            <input type="radio" name="course" value="BCA"> BCA
+            <input type="radio" name="course" value="B.Com"> B.Com
+            <input type="radio" name="course" value="B.Sc"> B.Sc
+            <input type="radio" name="course" value="B.A"> B.A
+            <br><br>
+            <div class="btn-container">
+                <button type="submit" class="btn submit-btn">Submit</button>
+                <button type="reset" class="btn reset-btn">Reset</button>
+                <button><a href="index1.html" style="text-decoration: none;">next</a></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

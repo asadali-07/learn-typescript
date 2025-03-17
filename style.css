@@ -1,0 +1,88 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #d0c1f1;
+}
+.container {
+    width: 50%;
+    background: #5a3a94;
+    color: white;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+}
+h2 {
+    text-align: center;
+    color: white;
+}
+label {
+    font-weight: bold;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+}
+.gender input {
+    width: auto;
+}
+.hobbies input {
+    width: auto;
+}
+.qualification-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.qualification-table th, .qualification-table td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid white;
+}
+.btn-container {
+    text-align: center;
+}
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-btn {
+    background: green;
+    color: white;
+}
+.reset-btn {
+    background: red;
+    color: white;
+} */
+
+.OTP{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+}
+#otp1, #otp2, #otp3, #otp4{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: green;
+    color: white;
+    text-align: center;
+    margin-left: 45%;
+    margin-top: 50px;
+}
+h1,p{
+    text-align: center;
+}

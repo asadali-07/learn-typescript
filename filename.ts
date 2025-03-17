@@ -381,3 +381,27 @@
 //     }
 // }
 // console.log(validate(Name, Age, isUpdated)) // Output: true
+
+// let a:number=10;
+// let b:number=19;
+// console.log(a+b);
+
+// interface User {
+//      name:string;
+//      age:number;
+// }
+
+// let user:User={
+//     name:"Priyanshu",
+//     age:21,
+// }
+
+
+// function generateOTP(): string {
+//     let otp:string = "";
+//     for (let i = 0; i < 4; i++) {
+//       otp += Math.floor(Math.random() * 10);
+//     }
+//     return otp;
+//   }
+//   console.log(generateOTP());
